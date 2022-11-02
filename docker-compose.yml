@@ -1,0 +1,11 @@
+version: '3'
+services:
+  sample:
+    build: .
+    container_name: 'sample'
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./dev:/root/dev
+    ports:
+      - 8000:8000
